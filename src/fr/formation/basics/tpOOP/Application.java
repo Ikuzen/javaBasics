@@ -27,9 +27,10 @@ public class Application {
 	// To be implemented
 		int firstShooter;
 		int lastShooter;
+		Random random = new Random();
 		Cowboy[] cowboys = {luckyLuke, joeDalton};
 		while(true) {
-			firstShooter = new Random().nextInt(2);
+			firstShooter = random.nextInt(2);
 			lastShooter = Math.abs(firstShooter - 1);
 			cowboys[firstShooter].shoot(cowboys[lastShooter]);
 			if (cowboys[lastShooter].isDead()) {
