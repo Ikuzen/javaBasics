@@ -19,7 +19,7 @@ public class Application {
 	double[] prices = { 49.99, 19.99, 9.99, 14.59, 99.99 };
 	double[] rates = { 20.0, 10.0, 10.0, 5.0, 20.0 };
 	for(int i=0; i< prices.length;i++){
-		System.out.println(calculateWithoutTax(prices[i], rates[i], true));
+		System.out.println("With VAT=€"+prices[i]+", without VAR=€"+calculateWithoutTax(prices[i], rates[i], true)+" (rate ="+ rates[i]+ "%)");
 	}
     }
 
