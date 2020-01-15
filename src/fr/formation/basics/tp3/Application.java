@@ -20,6 +20,8 @@ public class Application {
 	double[] rates = { 20.0, 10.0, 10.0, 5.0, 20.0 };
 	for(int i=0; i< prices.length;i++){
 		System.out.println("With VAT=€"+prices[i]+", without VAR=€"+calculateWithoutTax(prices[i], rates[i], true)+" (rate ="+ rates[i]+ "%)");
+		// autres syntaxes : String.format(" %d",price)
+		// Messageformat.format("With VAT=€{0}")
 	}
     }
 
